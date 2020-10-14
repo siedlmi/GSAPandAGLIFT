@@ -6,15 +6,19 @@
     <title>AG Lift</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <div id="navbar">
+    <div class="navbar" id="myTopnav">
         <a href="#home" class="button"><b>AG</b> Lift</a>
         <a href="#contact">Kontakt</a>
         <a href="#offer">Oferta</a>
         <a href="#lifts">Dżwigi</a>
         <a href="#home">O Firmie</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
       </div> 
 
 
@@ -53,7 +57,7 @@
             <line y1="-1.5" x2="9.38416" y2="-1.5" transform="matrix(0.183744 0.982974 0.984399 -0.175949 356.81 260.325)" stroke="#4B4949" stroke-width="3"/>
             <line y1="-1.5" x2="9.38416" y2="-1.5" transform="matrix(0.99743 -0.0716458 0.0795473 0.996831 344.593 276.16)" stroke="#4B4949" stroke-width="3"/>
             <line y1="-1.5" x2="9.38416" y2="-1.5" transform="matrix(-0.183744 -0.982974 -0.984399 0.175949 344.593 276.16)" stroke="#4B4949" stroke-width="3"/>
-            <g class="whole-card">
+        <g class="whole-card">
             <rect class="card-bg" x="730.18" y="243.46" width="131" height="136" transform="rotate(37.6518 730.18 243.46)" fill="#C4C4C4" stroke="#4B4949" stroke-width="4"/>
             <rect class="card-door" x="713.594" y="286.238" width="40" height="92" transform="rotate(37.6518 713.594 286.238)" fill="#C4C4C4" stroke="#4B4949" stroke-width="4"/>
             <rect class="card-door" x="745.264" y="310.672" width="40" height="92" transform="rotate(37.6518 745.264 310.672)"  fill="#C4C4C4" stroke="#4B4949" stroke-width="4"/>
@@ -153,7 +157,7 @@
             <line y1="-1.5" x2="9.38416" y2="-1.5" transform="matrix(0.183744 0.982974 0.984399 -0.175949 447.81 792.98)" stroke="#4B4949" stroke-width="3"/>
             <line y1="-1.5" x2="9.38416" y2="-1.5" transform="matrix(0.99743 -0.0716458 0.0795473 0.996831 435.593 808.815)" stroke="#4B4949" stroke-width="3"/>
             <line y1="-1.5" x2="9.38416" y2="-1.5" transform="matrix(-0.183744 -0.982974 -0.984399 0.175949 435.593 808.815)" stroke="#4B4949" stroke-width="3"/>
-            </svg>
+        </svg>
             
     </div>
     <div class="content">
@@ -182,6 +186,16 @@
         tl1.to(".whole-card", {y: 10, repeat: -1, yoyo: true})
         tl3.from(".main-content", { opacity: 0, y: 40, stagger: .3})
 
+    </script>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    } 
     </script>
 </body>
 </html>
