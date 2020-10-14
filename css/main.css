@@ -98,6 +98,24 @@ svg {
   font-weight: bold;
 }
 
+#contact {
+  position: relative;
+  margin-top: 55%;
+  width: 100%;
+  background-color: #1a1818;
+  color: white;
+  text-align: center;
+  font-size: .7em;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #252323;
+  text-align: center;
+  font-size: .7em;
+}
+
 @media screen and (min-width: 840px) {
   body {
     font-size: 22px;
